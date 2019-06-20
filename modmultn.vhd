@@ -47,7 +47,7 @@ begin
         a_reg <= (others => '0');
         b_reg <= (others => '0');
         p_reg <= (others => '0');
-    elsif rising_edge(clk) = '1' then
+    elsif rising_edge(clk) then
         if start = '1' then
             a_reg <= a;
             b_reg <= b;
